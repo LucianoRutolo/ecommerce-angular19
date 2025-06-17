@@ -1,0 +1,8 @@
+<div class="container-xl">
+  <h2>List of all products</h2>
+  <hr />
+
+  @for (p of products(); track $index) {
+  <app-product-card [product]="p" />
+  }
+</div>
